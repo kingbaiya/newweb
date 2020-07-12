@@ -1,9 +1,5 @@
 
 <style scoped lang="less">
-  .indexpage{
-    width: 100%;
-    height: 100%;
-  }
   .center{
     display: flex;
     justify-content: space-around;
@@ -12,7 +8,7 @@
     height: 75px;
     .input{
       width: 165px;
-      height: 35px;
+        height: 35px;
     }
     div{
       width: 70px;
@@ -66,7 +62,7 @@
     <Top></Top>
     <div class="center">
       <input type="text" class="input" placeholder="请输入名称">
-      <div class="search" @click="search">搜索</div>
+      <div class="search">搜索</div>
       <div class="refresh">刷新</div>
     </div>
     <div class="tablebox">
@@ -83,16 +79,10 @@
           <th>{{item.name}}</th>
           <th :class="[item.used_status===0?'color1':item.used_status===3?'color2':'']">{{item.used_status===0?status0:item.used_status===1?status1:status2}}</th>
         </tr>
-        <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
       </table>
     </div>
-    <Bottom :num="0"></Bottom>
+    <Bottom :num="1"></Bottom>
   </div>
 </template>
 
-<script src="./index.js"></script>
+<script src="./monitor.js"></script>

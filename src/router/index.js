@@ -8,10 +8,17 @@ const routes = [
     path: '/',
     name: 'index',
     component: () => import('../views/index/index.vue')
+  },
+  { // 监控界面
+    path: '/monitor',
+    name: 'monitor',
+    component: () => import('../views/monitor/monitor.vue')
   }
 ]
 
 const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes
 })
 
