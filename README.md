@@ -2,7 +2,7 @@
 
 ## Project setup
 ```
-yarn install
+学习Vue写的东西
 ```
 
 ### Compiles and hot-reloads for development
